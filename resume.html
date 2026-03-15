@@ -1,0 +1,212 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume | Kimberly Clarisse Puno</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            :root {
+                --color-dark-taupe: #D0B8AC;
+                --color-peach: #F3D8C7;
+                --color-white: #FFFFFF;
+            }
+
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            
+            body {
+                font-family: 'Inria Serif', serif;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                background-color: var(--color-white);
+            }
+
+            .navbar { background-color: var(--color-peach); padding: 15px 40px; }
+            .flex-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; width: 100%; }
+            .nav-links { list-style: none; display: flex; gap: 25px; }
+            .nav-logo { height: 50px; width: auto; }
+
+            .resume-wrapper { flex: 1; display: flex; justify-content: center; }
+            .resume-grid { display: grid; grid-template-columns: 320px 1fr; width: 100%; max-width: 1200px; }
+
+            .resume-sidebar { background-color: var(--color-dark-taupe); padding: 40px 30px; }
+            .resume-photo { width: 100%; border: 1px solid #999; margin-bottom: 25px; }
+            .resume-photo img { width: 100%; display: block; }
+            
+            .sidebar-section { margin-bottom: 25px; }
+            .sidebar-section h3 { font-size: 1.1rem; border-bottom: 1px solid #888; margin-bottom: 10px; padding-bottom: 5px; }
+            .sidebar-section p, .sidebar-section li { font-size: 0.85rem; margin-bottom: 5px; list-style: none; line-height: 1.4; }
+
+            .resume-main { padding: 50px 60px; background: white; }
+            .resume-header h1 { font-size: 3.5rem; line-height: 1; margin-bottom: 5px; }
+            .role { font-size: 1.3rem; color: #444; margin-bottom: 20px; }
+            .bio { font-size: 0.9rem; margin-bottom: 35px; text-align: justify; }
+
+            .section-title { 
+                background-color: var(--color-peach); 
+                padding: 8px 15px; 
+                font-size: 1rem; 
+                font-weight: bold; 
+                margin-bottom: 15px; 
+                display: block;
+            }
+
+            .resume-body-section { margin-bottom: 30px; }
+            .edu-item { margin-bottom: 15px; }
+            .edu-item strong { display: block; font-size: 1rem; }
+            .edu-item span { font-size: 0.85rem; color: #555; }
+
+            .cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+            .cert-grid img { width: 100%; border: 1px solid #ddd; }
+
+            .footer { background-color: var(--color-peach); padding: 15px 40px; margin-top: auto; }
+            .footer-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; font-size: 0.8rem; }
+            .social-icons { display: flex; gap: 12px; }
+            .social-icons svg { width: 18px; height: 18px; fill: #000; }
+
+            .download-btn { 
+                display: block; 
+                width: 100%; 
+                padding: 10px; 
+                background: white; 
+                text-align: center; 
+                text-decoration: none; 
+                color: #000; 
+                border-radius: 4px; 
+                font-size: 0.8rem;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container flex-nav">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo" class="nav-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Project</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="resume-wrapper">
+            <main class="resume-grid">
+                <aside class="resume-sidebar">
+                    <div class="resume-photo">
+                        <img src="img/resumee.png" alt="Kimberly Puno">
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>CONTACT</h3>
+                        <p>📞 +63 948 211 1401</p>
+                        <p>✉️ kmbrly110204@gmail.com</p>
+                        <p>📍 Block 9 Lot 18 Cattleya Street Malino Subd., Malino, CSFP</p>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>PERSONAL BACKGROUND</h3>
+                        <p>AGE: 21 | Female</p>
+                        <p>BIRTH: Nov. 02, 2004</p>
+                        <p>CIVIL STATUS: Single</p>
+                        <p>Languages: English, Filipino</p>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>SOFT SKILLS</h3>
+                        <ul>
+                            <li>Communication skills</li>
+                            <li>Teamwork</li>
+                            <li>Adaptable</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>TECHNICAL SKILLS</h3>
+                        <ul>
+                            <li>Front-End Coding</li>
+                            <li>HTML / CSS / JS</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                    <a href="resume.pdf" class="download-btn" download>📥 Download Resume</a>
+                </aside>
+
+                <section class="resume-main">
+                    <header class="resume-header">
+                        <h1>Kimberly Clarisse Puno</h1>
+                        <p class="role">Website Developer; UI/UX Design</p>
+                        <p class="bio">An aspiring web developer who enjoys turning ideas into functional and responsive websites. Experienced in building academic platforms, cultural websites, and landing pages using HTML, CSS, and JavaScript, with attention to design and user experience.</p>
+                    </header>
+
+                    <div class="resume-body-section">
+                        <span class="section-title">EDUCATIONAL BACKGROUND</span>
+                        <div class="edu-item">
+                            <strong>Holy Angel University</strong>
+                            <span>BSIT - Website Development (2023 - Present)</span>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Holy Angel University</strong>
+                            <span>Senior High School (2021-2023)</span>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Holy Angel University</strong>
+                            <span>Junior High School (2016-2021)</span>
+                        </div>
+                    </div>
+
+                    <div class="resume-body-section">
+                    <span class="section-title">EXPERIENCES</span>
+                    <ul class="experience-list">
+                        <li>Developed multiple academic websites and web mockups, including an e-library platform, food and culture websites, and business landing pages.</li>
+                        <li>Collaborated with peers to create user-friendly interfaces and organized content for enhanced user experience.</li>
+                        <li>Implemented responsive designs using HTML, CSS, and JavaScript to ensure usability across different devices.</li>
+                    </ul>
+                </div>
+
+                    <div class="resume-body-section">
+                    <span class="section-title">CERTIFICATIONS</span>
+
+                    <!-- Hubspot -->
+                    <h3 class="cert-category">Hubspot</h3>
+                    <div class="cert-grid">
+                        <a href="img/hubspot1.jpg" target="_blank"><img src="img/hubspot1.jpg" alt="Hubspot Certificate 1"></a>
+                        <a href="img/hubspot2.jpg" target="_blank"><img src="img/hubspot2.jpg" alt="Hubspot Certificate 2"></a>
+                        <a href="img/hubspot3.jpg" target="_blank"><img src="img/hubspot3.jpg" alt="Hubspot Certificate 3"></a>
+                    </div>
+
+                    <!-- freeCodeCamp -->
+                    <h3 class="cert-category">freeCodeCamp</h3>
+                    <div class="cert-grid">
+                        <a href="img/fcc1.jpg" target="_blank"><img src="img/fcc1.jpg" alt="freeCodeCamp Certificate 1"></a>
+                        <a href="img/fcc2.jpg" target="_blank"><img src="img/fcc2.jpg" alt="freeCodeCamp Certificate 2"></a>
+                        <a href="img/fcc3.jpg" target="_blank"><img src="img/fcc3.jpg" alt="freeCodeCamp Certificate 3"></a>
+                    </div>
+
+                    <!-- Simplilearn -->
+                    <h3 class="cert-category">Simplilearn</h3>
+                    <div class="cert-grid">
+                        <a href="img/simplilearn1.jpg" target="_blank"><img src="img/simplilearn1.jpg" alt="Simplilearn Certificate 1"></a>
+                        <a href="img/simplilearn2.jpg" target="_blank"><img src="img/simplilearn2.jpg" alt="Simplilearn Certificate 2"></a>
+                        <a href="img/simplilearn3.jpg" target="_blank"><img src="img/simplilearn3.jpg" alt="Simplilearn Certificate 3"></a>
+                    </div>
+                </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">
+        <div class="container footer-content">
+            <p>© All Rights Reserved. Created by Kimberly Clarisse Puno</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kimpuno02/" class="social-link"><img src="img/fb-icon.jpg" alt="Facebook"></a>
+                <a href="#" class="social-link"><img src="img/ig-icon.jpg" alt="Instagram"></a>
+                <a href="#" class="social-link"><img src="img/x-icon.png" alt="X"></a>
+                <a href="#" class="social-link"><img src="img/linkedin-icon.jpg" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
